@@ -1,0 +1,192 @@
+
+*{ 
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.app{
+  max-width: 1550px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  box-shadow: 0 5px 6px black;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+/* header */
+header{
+  width: 97%;
+  min-height: 100px;
+  max-width: 1530px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0 5px 10px black;
+}
+a{
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a:hover{
+  color: black;
+}
+li{
+  list-style: none;
+}
+header ul{
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+header ul li{
+  padding: 0 1rem;
+}
+header ul li a{
+  font-weight: bold;
+ 
+}
+header .cart{
+  position: relative;
+  cursor: pointer;
+}header .cart box-icon{
+  width: 45px;
+  height: 35px;
+}
+header .cart span{
+  position: absolute;
+  top: -1rem;
+  right: -1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 0rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: black;
+}
+/*-------------INICIO----------*/
+.inicio{
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 9rem;
+}
+
+.inicio h1{
+  font-weight: 2rem;
+  color: black;
+}
+
+.inicio img{
+  width: 950px;
+  height: 300px;
+}
+
+
+
+
+
+/*PRODCUTOS*/
+.title{
+  font-size: 1.5rem;
+  padding: 10rem 0 0 0;
+  color: black;
+}
+.productos{
+  padding:5rem 1rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 3rem 1rem;
+  box-sizing: border-box;
+}
+.producto{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 9px 9px 2px rgb(36, 35, 35);
+  border: 6px solid transparent;
+  border-radius: 5px;
+}
+.producto:hover{
+  border: 6px solid rgb(63, 63, 63);
+}
+.producto__img img{
+  width: 230px ;
+}
+.producto_footer{
+  padding: 1rem;
+}
+.producto_footer h1{
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: rgb(34, 34, 34);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.producto_footer p{
+  font-weight:700 ;
+  color: black;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.producto_footer .price{
+  font-size:1.3rem ;
+  color: rgb(36, 35, 35);
+}
+.producto .button{
+  width: 100%;
+  height: 45px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem 3rem;
+  padding: 0 1rem;
+  margin: 1rem;
+}
+.button .btn{
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.button button{
+  background-color: rgb(68, 68, 68);
+  max-width: 250px;
+  width: 100%;
+  font-size: 1rem;
+  color: white;
+  font-weight:450 ;
+}
+.button div a{
+  background-color: rgb(68, 68, 68);
+  display: grid;
+  font-size: 2rem;
+  align-items: center;
+  text-align: center;
+  margin-left: -2rem;
+}
+.button div a{
+  color: white;
+  font-weight: 450;
+}
+.button div a:hover{
+  color: white;
+}
